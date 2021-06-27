@@ -13,8 +13,9 @@
 html {
   font-style: 62.5%;
 }
-body {
+.container {
   overflow-x: hidden;
+  width: 100%;
 }
 /* section 1 */
 .section-1 {
@@ -289,4 +290,88 @@ body {
   text-align: justify;
   letter-spacing: 0.1rem;
   text-indent: 2rem;
+}
+
+/* section 4 */
+.section-4 {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-container {
+  width: 80%;
+  height: 40%;
+  background-color: #e5e9ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0.3rem 0.3rem 0.4rem #ccc, -0.1rem -0.1rem 0.4rem #ccc;
+  border-radius: 10px;
+  perspective: 100rem;
+}
+.form-img {
+  height: 100%;
+  display: block;
+  background: rgba(50, 231, 255, 0.8);
+  padding: 30px;
+  opacity: 0.8;
+  box-shadow: -20px 20px 40px #aaa;
+  border-radius: 8px;
+  transform: rotateY(20deg);
+  transition: all 0.5s;
+}
+.form-img:hover {
+  transform: translateY(-2rem) rotateY(20deg);
+  box-shadow: -5rem 5rem 7rem #aaa;
+}
+.contacr-form {
+  width: 45rem;
+  flex-direction: column;
+  display: flex;
+  padding: 25px;
+  border-radius: 8px;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 20px 20px 40px #aaa;
+  transform: rotateY(-20deg);
+}
+.contacr-form:hover {
+  transform: translateY(-2rem) rotateY(-20deg);
+  box-shadow: 5rem 5rem 7rem #aaa;
+}
+.contacr-form input,
+.contacr-form textarea {
+  margin: 16px;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  letter-spacing: 0.1rem;
+  border-radius: 30px;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd, inset -0.1rem -0.1rem 0.2rem #ddd;
+}
+.contacr-form input[type="submit"] {
+  color: #fff;
+  background: rgba(50, 231, 255, 0.8);
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.contacr-form input[type="submit"]:hover {
+  background-color: #32e7ff;
+}
+.contacr-form textarea {
+  max-height: 130px;
+  min-height: 60px;
+  max-width: 100%;
+  min-width: 70%;
+}
+.copyright {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #444;
+  margin-top: 50px;
 }
