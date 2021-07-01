@@ -12,6 +12,7 @@
 }
 html {
   font-style: 62.5%;
+  scroll-behavior: smooth;
 }
 .container {
   overflow-x: hidden;
@@ -374,4 +375,22 @@ html {
   letter-spacing: 0.2rem;
   color: #444;
   margin-top: 50px;
+}
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  background: #32e7ffc1;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+.scroll-up-btn:hover {
+  background-color: #32e7ff;
 }
